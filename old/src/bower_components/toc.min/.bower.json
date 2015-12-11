@@ -1,0 +1,14 @@
+{
+  "name": "toc.min",
+  "_cacheHeaders": {
+    "ETag": "\"8cfde523d341ffcd5ff67f1d21f724978c6d7806\"",
+    "Content-Length": "2581",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "_release": "e-tag:8cfde523d",
+  "main": "index.js",
+  "_source": "https://raw.github.com/jgallen23/toc/master/dist/toc.min.js",
+  "_target": "*",
+  "_originalSource": "https://raw.github.com/jgallen23/toc/master/dist/toc.min.js",
+  "_direct": true
+}
