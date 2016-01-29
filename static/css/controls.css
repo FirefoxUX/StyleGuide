@@ -1,6 +1,16 @@
+/* stylelint-disable property-no-vendor-prefix */
+/* Base */
+button,
+select,
+option,
+input {
+  -moz-appearance: none;
+}
+
 /* Variables */
 /* Buttons */
-button {
+button,
+select {
   background-color: #fbfbfb;
   border: 1px solid #b1b1b1;
   font: caption;
@@ -10,35 +20,57 @@ button {
   width: 80px;
 }
 
+select {
+  background-image: url(613e3d8e2d98fc223af6a6ebc1b7ac66.svg);
+  background-position: calc(100% - 4px) center;
+  background-repeat: no-repeat;
+  -moz-padding-end: 24px;
+  text-overflow: ellipsis;
+  width: 216px;
+}
+
 button::-moz-focus-inner {
   border: 0;
   outline: 0;
 }
 
-.mac button {
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+  /* your normal text color here */
+}
+
+select:-moz-focusring * {
+  color: #000;
+  /* your normal text color here */
+  text-shadow: none;
+}
+
+.mac button,
+.mac select {
   border-radius: 4px;
 }
 
-.other button {
-  border-radius: 0;
-}
-
-button.hover {
+button.hover,
+select.hover {
   background-color: #ebebeb;
   border: 1px solid #b1b1b1;
 }
 
-button.pressed {
+button.pressed,
+select.pressed {
   background-color: #d4d4d4;
   border: 1px solid #858585;
 }
 
-button.disabled {
+button.disabled,
+select.disabled {
   color: #666;
   opacity: .5;
 }
 
-button.focused {
+button.focused,
+select.focused {
   border-color: #fff;
   box-shadow: 0 0 0 2px rgba(97, 181, 255, 0.75);
 }
@@ -64,12 +96,14 @@ button.default.focused {
 }
 
 /* Interactive States */
-button:hover:not(.pressed):not(.disabled):not(.focused) {
+button:hover:not(.pressed):not(.disabled):not(.focused),
+select:hover:not(.pressed):not(.disabled):not(.focused) {
   background-color: #ebebeb;
   border: 1px solid #b1b1b1;
 }
 
-button:hover:active:not(.hover):not(.disabled):not(.focused) {
+button:hover:active:not(.hover):not(.disabled):not(.focused),
+select:hover:active:not(.hover):not(.disabled):not(.focused) {
   background-color: #d4d4d4;
   border: 1px solid #858585;
 }
@@ -84,7 +118,7 @@ button.default:hover:active:not(.hover):not(.disabled):not(.focused) {
   border-color: #004480;
 }
 
-button:focus {
+button:focus:not(.disabled) {
   border-color: #fff !important;
   box-shadow: 0 0 0 2px rgba(97, 181, 255, 0.75);
 }
