@@ -10,7 +10,8 @@ input {
 /* Variables */
 /* Buttons */
 button,
-select {
+select,
+input {
   background-color: #fbfbfb;
   border: 1px solid #b1b1b1;
   font: caption;
@@ -92,6 +93,79 @@ button.default.pressed {
 }
 
 button.default.focused {
+  border-color: #fff;
+}
+
+/* Radio Buttons */
+.radioItem {
+  margin-bottom: 6px;
+  text-align: left;
+  width: 120px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  -moz-user-select: none;
+}
+
+input[type="radio"] + label::before {
+  background-color: #fff;
+  border: 1px solid #b1b1b1;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: text-top;
+  width: 16px;
+}
+
+input[type="radio"]:hover + label::before,
+.radioItem.hover input[type="radio"]:not(active) + label::before {
+  background-color: #fbfbfb;
+  border-color: #b1b1b1;
+}
+
+input[type="radio"]:hover:active + label::before,
+.radioItem.pressed input[type="radio"]:not(active) + label::before {
+  background-color: #ebebeb;
+  border-color: #858585;
+}
+
+input[type="radio"]:checked + label::before {
+  background-color: #0996f8;
+  background-image: url(2c501320a3a0b2fd2413e224a8a844c7.svg);
+  border-color: #0670cc;
+}
+
+input[type="radio"]:checked:hover + label::before,
+.radioItem.hover input[type="radio"]:checked:not(active) + label::before {
+  background-color: #0670cc;
+  border-color: #005bab;
+}
+
+input[type="radio"]:checked:hover:active + label::before,
+.radioItem.pressed input[type="radio"]:checked:not(active) + label::before {
+  background-color: #005bab;
+  border-color: #004480;
+}
+
+.radioItem.disabled input[type="radio"] + label,
+.radioItem.disabled input[type="radio"]:hover + label,
+.radioItem.disabled input[type="radio"]:hover:active + label {
+  color: #666;
+  opacity: .5;
+}
+
+.radioItem.focused input[type="radio"] + label::before {
+  border-color: #0996f8;
+  box-shadow: 0 0 0 2px rgba(97, 181, 255, 0.75);
+}
+
+.radioItem.focused input[type="radio"]:checked + label::before {
   border-color: #fff;
 }
 
