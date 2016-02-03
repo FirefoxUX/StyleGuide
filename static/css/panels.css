@@ -27,6 +27,10 @@ input {
   width: 384px;
 }
 
+.result .panel {
+  margin-top: 0;
+}
+
 .panel * {
   box-sizing: border-box;
   text-align: start;
