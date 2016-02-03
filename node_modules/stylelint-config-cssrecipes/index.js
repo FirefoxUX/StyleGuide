@@ -28,7 +28,7 @@ module.exports = {
     "function-parentheses-space-inside": "never",
     "function-whitespace-after": "always",
     "function-url-quotes": "double",
-    "indentation": [ 2, 2, {
+    "indentation": [ 2, {
       hierarchicalSelectors: true,
     } ],
     "max-empty-lines": 1,
