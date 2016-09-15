@@ -32,5 +32,10 @@
     "pages": [
       {"title": "Downloads",
         "file": "downloads"}
+      ]},
+  {"title": "Copy",
+    "pages": [
+      {"title": "Localization",
+        "file": "localization"}
       ]}
 ]
