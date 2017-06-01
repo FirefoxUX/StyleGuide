@@ -1,3 +1,5 @@
+**DISCLAIMER**: This style guide is out of date. Please visit the [Photon Design System](http://design.firefox.com/photon/).
+
 # Firefox UX Style Guide  [![Build Status](https://travis-ci.org/FirefoxUX/StyleGuide.svg?branch=master)](https://travis-ci.org/FirefoxUX/StyleGuide)
 
 You probably want to go [here](https://FirefoxUX.github.io/StyleGuide/)
