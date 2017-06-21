@@ -49,3 +49,7 @@ select.icon {
 .mac .comboButtons > button:last-child {
   border-radius: 0 $border-radius-osx $border-radius-osx 0;
 }
+
+.mac .comboButtons > button:first-child:last-child {
+  border-radius: $border-radius-osx;
+}
