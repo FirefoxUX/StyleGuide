@@ -157,17 +157,6 @@ input[type="checkbox"] {
   box-shadow: 0 0 0 2.5px $color-blue-focusRing;
 }
 
-/* Expander Button */
-
-button.expander {
-  background-image: url("../../images/controls/Arrow-Dropdown.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 24px;
-  padding: 0;
-  width: 24px;
-}
-
 div.label {
   margin-top: 10px;
 }
@@ -186,6 +175,14 @@ div.label {
   width: 100px;
 }
 
+.comboButtons > button:first-child {
+  margin-left: 0px;
+}
+
+.comboButtons > button:last-child {
+  margin-right: 0px;
+}
+
 .comboButtons > button.hover,
 .comboButtons > button.pressed {
   z-index: 99;
@@ -193,6 +190,17 @@ div.label {
 
 .comboButtons > button:focus {
   z-index: 199;
+}
+
+/* Expander Button */
+
+button.expander {
+  background-image: url("../../images/controls/Arrow-Dropdown.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 24px;
+  padding: 0;
+  width: 24px;
 }
 
 /* Interactive States */
